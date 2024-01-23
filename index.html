@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate web developer with experience in building responsive and user-friendly websites.
+                I enjoy turning ideas into reality through code and constantly seek opportunities to learn and grow.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project" onclick="showProjectDetails('project1')">
+                <h3>Project 1</h3>
+                <p>A description of Project 1.</p>
+            </div>
+            <div class="project" onclick="showProjectDetails('project2')">
+                <h3>Project 2</h3>
+                <p>A description of Project 2.</p>
+            </div>
+            <!-- Add more projects as needed -->
+
+            <!-- Project Modals -->
+            <div id="project1Modal" class="project-modal">
+                <span class="close" onclick="hideProjectDetails('project1')">&times;</span>
+                <h3>Project 1</h3>
+                <p>Detailed information about Project 1.</p>
+            </div>
+            <div id="project2Modal" class="project-modal">
+                <span class="close" onclick="hideProjectDetails('project2')">&times;</span>
+                <h3>Project 2</h3>
+                <p>Detailed information about Project 2.</p>
+            </div>
+            <!-- Add more modals as needed -->
+        </section>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
